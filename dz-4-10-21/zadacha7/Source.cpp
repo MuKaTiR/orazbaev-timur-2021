@@ -4,9 +4,12 @@ using namespace std;
 
 int main()
 {
-	int a, b, c, d, x;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
+	int x = 0;
 	cin >> a >> b >> c >> d;
-	x = 0;
 	
 	while (x <= 1000)
 	{

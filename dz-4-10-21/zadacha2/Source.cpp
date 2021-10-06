@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-	int c = 0;
-	int n = 0;
-	int f = 1;
+	int c, n, f;
+	f = 1;
+	c = 0;
 	cin >> n;
 	if (n > 0)
 	{
@@ -21,7 +21,7 @@ int main()
 	}
 	else
 	{
-		cout << 1;
+		cout << 0;
 	}
 
 

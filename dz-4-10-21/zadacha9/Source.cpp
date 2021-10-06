@@ -9,7 +9,7 @@ int main()
 
 	for (int i = a; i <= b; i++)
 	{
-		if (i%d == c) 
+		if (i % d == c) 
 		{
 			cout << i << " ";
 		}

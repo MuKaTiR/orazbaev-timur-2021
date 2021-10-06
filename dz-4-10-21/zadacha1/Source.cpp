@@ -5,12 +5,10 @@
 
 int main()
 {
-	int c = 1;
-	int n = 0;
-	int f = 1;
-
+	int c, n, f;
+	f = 1;
+	c = 1;
 	cin >> n;
-
 	while (c <= n)
 	{
 		

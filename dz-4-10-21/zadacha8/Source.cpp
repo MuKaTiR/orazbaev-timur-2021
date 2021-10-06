@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-	int n, sum;
-	sum = 0;
+	int n = 0;
+	int sum = 0;
 
 	cin >> n;
 
