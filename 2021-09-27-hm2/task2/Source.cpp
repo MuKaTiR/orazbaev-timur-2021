@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	int a;
+	int a = 0;
 	cin >> a;
 	if (a % 400 == 0)
 	{
