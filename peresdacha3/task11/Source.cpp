@@ -9,12 +9,12 @@ int main(int argc, char** argv)
 	int col = 0;
 	int chislo = 0; 
 	int sra = 0;
-	for (n = 1; n <= 9; n++)
+	for (n = 1; n <= 100; n++)
 	{
 		cin >> chislo;
 		summ += chislo;
 	}
-	sra = summ / 9;
+	sra = summ / 100;
 	cout << endl << sra << endl;
 	return EXIT_SUCCESS;
 }
