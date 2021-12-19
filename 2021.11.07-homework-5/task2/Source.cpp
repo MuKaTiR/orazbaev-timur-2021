@@ -25,6 +25,6 @@ int main()
 	// and
 	// 010000 != 0
 
-
+	return EXIT_SUCCESS;
 }
 
