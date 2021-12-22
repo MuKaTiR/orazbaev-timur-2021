@@ -7,9 +7,9 @@ void increase_size(int** arr, int* size, int* capacity)
 	if (*size + 1 > *capacity)
 	{
 		int* temp = new int[*capacity * 2];
-		for (int f = 0; f < *size; ++f)
+		for (int i = 0; i < *size; ++i)
 		{
-			temp[f] = (*arr)[f];
+			temp[i] = (*arr)[i];
 		}
 		*arr = temp;
 		*capacity = *capacity * 2;
@@ -21,11 +21,11 @@ void move_arr(int* arr, int arr_size, int delta)
 {
 	if (delta > 0)
 	{
-		for (int g = arr_size - 1; g >= 0; --g)
+		for (int i = arr_size - 1; i >= 0; --i)
 		{
-			if (g + delta < arr_size)
+			if (i + delta < arr_size)
 			{
-				arr[g + delta] = arr[g];
+				arr[i + delta] = arr[i];
 			}
 		}
 	}
@@ -50,13 +50,13 @@ int main(int argc, char** argv)
 	while (true)
 	{
 		cout << "=== Options ===\n";
-		cout << "1 - Exit\n";
-		cout << "2 - Print array\n";
-		cout << "3 - Append element to the end\n";
-		cout << "4 - Append element to the beginning\n";
-		cout << "5 - Remove last element\n";
-		cout << "6 - Remove first element\n";
-		cout << "7 - Reverse array\n";
+		cout << "q - Exit\n";
+		cout << "p - Print array\n";
+		cout << "e - Append element to the end\n";
+		cout << "b - Append element to the beginning\n";
+		cout << "l - Remove last element\n";
+		cout << "f - Remove first element\n";
+		cout << "r - Reverse array\n";
 		cout << "===============\n";
 
 		char command = '\x00';
@@ -64,27 +64,27 @@ int main(int argc, char** argv)
 
 		switch (command)
 		{
-		case '1':
+		case 'q':
 		{
 			return EXIT_SUCCESS;
 		}
-		case '2':
+		case 'p':
 		{
-			for (int f = 0; f < size; ++f)
+			for (int i = 0; i < size; ++i)
 			{
-				cout << arr[f] << " ";
+				cout << arr[i] << " ";
 			}
 			cout << "\n";
 			break;
 		}
-		case '3':
+		case 'e':
 		{
 			increase_size(&arr, &size, &capacity);
 			cout << "Enter new element: ";
 			cin >> arr[size - 1];
 			break;
 		}
-		case '4':
+		case 'b':
 		{
 			increase_size(&arr, &size, &capacity);
 			move_arr(arr, size, 1);
@@ -92,7 +92,7 @@ int main(int argc, char** argv)
 			cin >> arr[0];
 			break;
 		}
-		case '5':
+		case 'l':
 		{
 			if (size > 0)
 			{
@@ -100,7 +100,7 @@ int main(int argc, char** argv)
 			}
 			break;
 		}
-		case '6':
+		case 'f':
 		{
 			if (size > 0)
 			{
@@ -109,7 +109,7 @@ int main(int argc, char** argv)
 			}
 			break;
 		}
-		case '7':
+		case 'r':
 		{
 			for (int i = 0; i < size / 2; ++i)
 			{
@@ -123,4 +123,5 @@ int main(int argc, char** argv)
 			break;
 		}
 	}
+	return 0;
 }
