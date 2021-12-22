@@ -3,8 +3,8 @@
 
 #ifndef HEADER_MY_LIB_2
 
-int count(int n);
-void circle(int r);
+int count_steps(int n);
+void print_circle(int r);
 
 #endif
 

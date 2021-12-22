@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int count(int n)
+int count_steps(int n)
 {
 	int s = 0;
 	while (n != 1)
@@ -22,7 +22,8 @@ int count(int n)
 	}
 	return s;
 }
-void circle(int r)
+
+void print_circle(int r)
 {
 	int d = r * 2;
 
