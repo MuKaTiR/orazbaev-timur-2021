@@ -22,7 +22,8 @@ int main()
 	{
 		cout << x + 1 << " " << y;
 		cout << endl;
-	}if (y != 1)
+	}
+	if (y != 1)
 	{
 		cout << x << " " << y - 1;
 		cout << endl;
